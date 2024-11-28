@@ -1,0 +1,1 @@
+<model-viewer src="handaxe-qz.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" camera-orbit="107.3deg 79.26deg 0.2906m" field-of-view="30deg"> </model-viewer>

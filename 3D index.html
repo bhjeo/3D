@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>3D modeling</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="&lt;model-viewer&gt; template" />
+    <meta name="viewport" content="width=100%, initial-scale=1" />
+    <link type="text/css" href="./css/3D index.css" rel="stylesheet" />
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <section class="grid-container">
+      <!-- 윗열 중앙 -->
+      <section class="top-center">
+        <model-viewer
+          class="handaxe-model-center"
+          src="./3D file/handaxe-qz.glb"
+          tone-mapping="commerce"
+          shadow-intensity="1"
+          auto-rotate
+          rotation-per-second="20deg"
+        >
+        </model-viewer>
+      </section>
+      <section class="bottom-left">
+        <model-viewer
+          class="handaxe-model-left"
+          src="./3D file/handaxe-qz.glb"
+          tone-mapping="commerce"
+          shadow-intensity="1"
+          auto-rotate
+          rotation-per-second="20deg"
+        >
+        </model-viewer>
+      </section>
+      <section class="bottom-center"></section>
+      <section class="bottom-right">
+        <model-viewer
+          class="handaxe-model-right"
+          src="./3D file/handaxe-qz.glb"
+          tone-mapping="commerce"
+          shadow-intensity="1"
+          auto-rotate
+          rotation-per-second="20deg"
+        >
+        </model-viewer>
+      </section>
+    </section>
+  </body>
+</html>

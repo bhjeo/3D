@@ -1,0 +1,76 @@
+/* 기본 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+/* 그리드 컨테이너 설정 */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 0fr 1fr; /* 개의 열 */
+  grid-template-rows: 50% 1fr; /* 윗열은 콘텐츠에 맞게 크기 조정, 아랫열은 나머지 공간 차지 */
+  gap: 0px; /* 각 구역 사이의 간격 */
+  width: 100%; /* 전체 그리드 너비 */
+  height: 100%; /* 전체 그리드 높이 */
+}
+
+/* 윗열 중앙 */
+.top-center {
+  grid-column: 1 / 4; /* 첫 번째 열에서 두 번째 열까지 차지 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black; /* 배경 색상 */
+}
+
+/* 아래 열의 3개 구역 */
+.bottom-left,
+.bottom-center,
+.bottom-right {
+  height: 100%;
+  background-color: black;
+}
+
+/* 왼쪽 구역 */
+.bottom-left {
+  background-color: black; /* 왼쪽 구역 배경색 */
+}
+
+.bottom-center {
+  background-color: black; /* 왼쪽 구역 배경색 */
+}
+
+/* 오른쪽 구역 */
+.bottom-right {
+  background-color: black; /* 오른쪽 구역 배경색 */
+}
+
+/* 3D 모델 뷰어 스타일 */
+
+.handaxe-model-center {
+  width: 100%; /* 모델 크기 */
+  height: 100%;
+  transform: rotate(180deg);
+}
+
+.handaxe-model-left {
+  width: 100%; /* 모델 크기 */
+  height: 100%;
+  transform: rotate(90deg);
+}
+
+.handaxe-model-right {
+  width: 100%; /* 모델 크기 */
+  height: 100%;
+  transform: rotate(-90deg); /* 모델을 90도 회전 */
+}
